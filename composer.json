@@ -10,7 +10,9 @@
         "silverstripe/login-forms": "4.4.1@stable",
         "silverstripe/recipe-content-blocks": "^2.8",
         "silverstripe/workflow": "dev-main",
-        "silverstripe/workflow-trello": "dev-main"
+        "silverstripe/workflow-trello": "dev-main",
+        "silverstripe/crontask": "^2.2",
+        "silverstripe/dynamodb": "^4.0"
     },
     "require-dev": {
         "sminnee/phpunit": "^5.7",

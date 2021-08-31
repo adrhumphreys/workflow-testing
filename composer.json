@@ -1,0 +1,60 @@
+{
+    "name": "silverstripe/installer",
+    "type": "silverstripe-recipe",
+    "description": "The SilverStripe Framework Installer",
+    "require": {
+        "php": "^7.1 || ^8",
+        "silverstripe/recipe-plugin": "^1.2",
+        "silverstripe/recipe-cms": "4.8.0@stable",
+        "silverstripe-themes/simple": "~3.2.0",
+        "silverstripe/login-forms": "4.4.1@stable",
+        "silverstripe/recipe-content-blocks": "^2.8",
+        "silverstripe/workflow": "dev-main",
+        "silverstripe/workflow-trello": "dev-main"
+    },
+    "require-dev": {
+        "sminnee/phpunit": "^5.7",
+        "sminnee/phpunit-mock-objects": "^3.4.5"
+    },
+    "repositories": {
+        "silverstripe/workflow": {
+            "type": "git",
+            "url": "https://github.com/adrhumphreys/silverstripe-workflow.git"
+        },
+        "silverstripe/workflow-trello": {
+            "type": "git",
+            "url": "https://github.com/adrhumphreys/silverstripe-workflow-trello.git"
+        },
+        "silverstripe/iconpicker": {
+            "type": "vcs",
+            "url": "https://github.com/adrhumphreys/silverstripe-iconpicker.git"
+        },
+        "silverstripe/colorpicker": {
+            "type": "vcs",
+            "url": "https://github.com/SomarDesignStudios/silverstripe-colorpicker.git"
+        }
+    },
+    "extra": {
+        "resources-dir": "_resources",
+        "project-files-installed": [
+            "app/.htaccess",
+            "app/_config.php",
+            "app/_config/contentblocks.yml",
+            "app/_config/mimevalidator.yml",
+            "app/_config/mysite.yml",
+            "app/src/BlocksPage.php",
+            "app/src/Page.php",
+            "app/src/PageController.php"
+        ],
+        "public-files-installed": [
+            ".htaccess",
+            "index.php",
+            "web.config"
+        ]
+    },
+    "config": {
+        "process-timeout": 600
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
